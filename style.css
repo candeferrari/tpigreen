@@ -1,0 +1,258 @@
+h2 {
+	font-family: Inconsolata;
+	font-size: 50px;
+	text-align: center;
+	color: green;
+}
+h3 {
+  font-family: Inconsolata;
+  font-size: 25px;
+  text-align: center;
+  color: teal;
+
+}
+nav {
+  font-family: Inconsolata;
+  font-size: 25px;
+  text-align: center;
+  color: gray;
+  font-variant-caps: all;
+
+}
+
+p {
+  font-family: monospace;
+  font-size: 30px;
+  color: black;
+  text-align: left;
+}
+li {
+  font-family: monospace;
+  font-size: 20px;
+  color: gray;
+  }
+ul{
+  list-style-image:url(iconos/media-play-symbol.png)
+  }
+.titulotabla {
+  font-family: Inconsolata; 
+  font-size: 30px;
+  color: white;
+  text-align:center;
+  background-color: green;
+}
+#lineatabla {
+  border: 5px solid green;
+}
+a {
+  color:white;
+  font-size: 20px;
+}
+a:hover{
+  color: pink;
+}
+a:active{
+  color: pink;
+}
+a:visited{
+  color: orange;
+}
+.nombrecomidas {
+  font-family: Inconsolata; 
+  font-size: 30px;
+  color: gray;
+  text-align:center;
+  font-variant-caps: all-small-caps;
+}
+
+
+.titularmenu{
+  background: white;
+  height: 50px;
+  border-radius: 50px;
+  padding: 10px;
+  border: 10px solid teal;
+  margin: 5px 10px 5px 10px;
+  box-sizing: content-box;
+  font-family: Inconsolata bold;
+  font-size: 35px;
+  text-align: center;
+  color: teal;
+}
+#cajamenu{
+  position: fixed;
+  top: 5px;
+  background-color: #005C81;
+  border: 1px solid #005C81;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 10px;
+}
+#cajahead{
+  display: flex;
+  position: relative;
+}
+#cajaheadtitulo{
+  position: absolute;
+  top: 350px;
+  left: 380px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 100px;
+  text-align: center;
+  color: green;
+  font-family: Gloria Hallelujah;
+}
+/*clase 6*/
+/* menu */
+.navbar {
+  overflow: hidden;
+  background-color: teal;
+  font-family: Inconsolata;
+  font-size: 25px;
+  border-radius: 10px;
+}
+
+/* Navigation links */
+.navbar a {
+  float: left;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Inconsolata;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+  overflow: hidden;
+  font-family: Inconsolata;
+
+
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 25px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: teal;
+  font-family: Inconsolata;
+  margin: 0;
+}
+
+/* Add a red background color to navigation links on hover */
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: orange;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: orange;
+  width: 100%;
+  z-index: 1;
+}
+
+/* Style the subnav links */
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+  font-family: Inconsolata; 
+  font-size: 15px;
+}
+
+/* Add a grey background color on hover */
+.subnav-content a:hover {
+  background-color: pink;
+  color: teal;
+}
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/*tabla de recetar*/
+.white {
+  background-color: white;
+  border: 15px white solid;
+  width: 30%;
+
+}
+.nombrecomida {
+  background-color: orange;
+  border: 15px white solid;
+  width: 30%;
+  font-family: inconsolata;
+  font-size: 25px;
+  color: white;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.textoreceta {
+  border: 15px white solid;
+  width: 30%;
+  font-family: inconsolata;
+  font-size: 15px;
+  color: gray;
+  border-radius: 25px;
+}
+.ingredientes {
+  background-color: pink;
+  border: 15px white solid;
+  width: 30%;
+  font-family: inconsolata;
+  font-size: 20px;
+  color: teal;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.cajaflexbox {
+  display: flex;
+  border: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  margin: 2%;
+
+}
+
+.flexcenter {
+  display: flex;
+  background-color: white;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+}
+.itemcenter {
+ background: teal;
+ border-radius: 50px;
+  width: 200px;
+  height: 100px;
+  color: white;
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
+}
+.itemcentersubcripcion{
+ background: white;
+  width: 200px;
+  height: 100px;
+  color: gray;
+  margin: 30px;
+  padding: 20px;
+  text-align: center;
+}
+
