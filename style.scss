@@ -1,0 +1,312 @@
+ul{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: raleway;
+    color: white;
+}
+h2 {
+    font-family: Inconsolata;
+    font-size: 50px;
+    text-align: center;
+    color: green; 
+}
+
+h3 {
+    font-family: Inconsolata;
+    font-size: 25px;
+    text-align: center;
+    color: teal; 
+}
+p {
+    font-family: monospace;
+    font-size: 30px;
+    color: black;
+    text-align: left; 
+  }
+  
+li {
+    font-family: monospace;
+    font-size: 20px;
+    color: gray; 
+}
+.titulotabla {
+    font-family: Inconsolata;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    background-color: green; 
+}
+#lineatabla {
+    border: 5px solid green; 
+  }
+.nombrecomidas {
+    font-family: Inconsolata;
+    font-size: 30px;
+    color: gray;
+    text-align: center;
+    font-variant-caps: all-small-caps; 
+}
+.titularmenu {
+    background: white;
+    height: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    border: 10px solid teal;
+    margin: 5px 10px 5px 10px;
+    box-sizing: content-box;
+    font-family: Inconsolata bold;
+    font-size: 35px;
+    text-align: center;
+    color: teal; 
+}
+/*head*/
+#caja_head_img {
+    background: url(imagenhead/head.jpg) no-repeat center; 
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+#caja_head_titulo {
+    position: absolute;
+    top: 80%;
+    left:50%;
+    font-size: 150px;
+    text-align: center;
+    color: #005c46;
+    font-family: 'Comfortaa', bold;
+    transform: translate(-50%, -50%);
+}
+ #caja_head_subtitulo {
+  position: absolute;
+  top: 100%;
+  left:50%;
+  font-size: 50px;
+  text-align: center;
+  color: gray;
+  font-family: 'Inconsolata';
+  transform: translate(-50%, -50%);
+}
+#caja_head_menuredes {
+  position: fixed;
+  top: 10px;
+  background-color: #f48651;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  display: block;
+  color: white;
+  right: 0;
+}
+/*fin head*/  
+
+/* menu */
+.navbar {
+    position: static;
+    background-color: #005c81;
+    font-family: Inconsolata;
+    font-size: 25px;
+    border-radius: 20px; 
+}
+/* Navigation links */
+.navbar a {
+    float: left;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Inconsolata'; 
+    border-radius: 50px;
+    font-size: 25px;
+  }
+  
+  /* The subnavigation menu */
+  .subnav {
+    float: left;
+    overflow: hidden;
+    font-family: 'Inconsolata'; 
+    border-radius: 50px;
+    font-size: 25px;
+  }
+  
+  /* Subnav button */
+  .subnav .subnavbtn {
+    font-size: 25px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: #005c81;
+    font-family: 'Inconsolata';
+    margin: 0;
+    border-radius: 50px; 
+  }
+  
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: #f4a100; 
+  }
+  
+  /* Style the subnav content - positioned absolute */
+  .subnav-content {
+    display: none;
+    position: absolute;
+    left: 20%;
+  
+    background-color: #f4a100;
+    width: 100%;
+    z-index: 1; 
+    font-size: 25px;
+    border-radius: 50px;
+    }
+  
+  /* Style the subnav links */
+  .subnav-content a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    font-family: 'Inconsolata';
+    font-size: 25px; }
+  
+  /* Add a grey background color on hover */
+  .subnav-content a:hover {
+    background-color: #005c81;
+    color: white;
+     }
+  
+  /* When you move the mouse over the subnav container, open the subnav content */
+  .subnav:hover .subnav-content {
+    display: block; }
+  
+  /*tabla de recetar*/
+  .white {
+    background-color: white;
+    border: 15px white solid;
+    width: 30%; }
+  
+  .nombrecomida {
+    background-color: orange;
+    border: 15px white solid;
+    width: 30%;
+    font-family: inconsolata;
+    font-size: 25px;
+    color: white;
+    border-radius: 25px;
+    text-align: center; }
+  
+  .textoreceta {
+    border: 15px white solid;
+    width: 30%;
+    font-family: inconsolata;
+    font-size: 15px;
+    color: gray;
+    border-radius: 25px; }
+  
+  .ingredientes {
+    background-color: pink;
+    border: 15px white solid;
+    width: 30%;
+    font-family: inconsolata;
+    font-size: 20px;
+    color: teal;
+    border-radius: 25px;
+    text-align: center; }
+  
+  .cajaflexbox {
+    display: flex;
+    border: 15px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin: 2%; }
+  
+  .flexcenter {
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-around; }
+  
+  .itemcenter {
+    background: teal;
+    border-radius: 50px;
+    width: 200px;
+    height: 100px;
+    color: white;
+    margin: 30px;
+    padding: 20px;
+    text-align: center; }
+  
+  .itemcentersubcripcion {
+    background: white;
+    width: 200px;
+    height: 100px;
+    color: gray;
+    margin: 30px;
+    padding: 20px;
+    text-align: center; }
+  
+  .header {
+    grid-area: header;
+    background-color: teal;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white; 
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas: 'header header header header header header'  'left left middle middle right right'  'footer footer footer footer footer footer';
+    grid-template-columns: 100px auto 100px; }
+  
+  /* Style the left column */
+  .left {
+    grid-area: left; }
+  
+  /* Style the middle column */
+  .middle {
+    grid-area: middle; }
+  
+  /* Style the right column */
+  .right {
+    grid-area: right; }
+  
+  /* Style the footer */
+  .footer {
+    grid-area: center;
+    background-color: orange;
+    padding: 10px;
+    text-align: center;
+    color: white; }
+  
+  @media only screen and (min-width: 760px) {
+    .grid-container {
+      grid-template-areas: 
+      'header header header header header header'  
+      'left left left left left left' 
+      'middle middle middle middle middle middle'
+       'right right right right right right';
+        } 
+    }
+  
+  @media only screen and (min-width: 1024px) {
+    .grid-container {
+      grid-template-areas: 
+      'header header header header header header'  
+      'left left middle middle right right'; 
+      }
+  }
+  
+  #caja_head_menuredes {
+    position: fixed;
+    top: 10px;
+    background-color: #f48651;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    display: block;
+    color: white;
+    right: 0;
+  }
