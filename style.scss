@@ -38,13 +38,15 @@ li {
 }
 
 /*head*/
-#caja_head_img {
+.caja_head_img {
     background: url(imagenhead/head.jpg) no-repeat center; 
     background-size: cover;
     height: 500px;
     position: relative;
+    display: grid;
+    grid-template-areas: 'header header header header header header'  'left left middle middle right right'  'footer footer footer footer footer footer';
 }
-#caja_head_titulo {
+.caja_head_titulo {
     position: absolute;
     top: 80%;
     left:50%;
@@ -53,8 +55,9 @@ li {
     color: #005c46;
     font-family: 'Comfortaa', bold;
     transform: translate(-50%, -50%);
+    grid-template-areas: header;
 }
- #caja_head_subtitulo {
+ .caja_head_subtitulo {
   position: absolute;
   top: 100%;
   left:50%;
@@ -63,6 +66,7 @@ li {
   color: gray;
   font-family: 'Inconsolata';
   transform: translate(-50%, -50%);
+  grid-template-areas: middle;
 }
 #caja_head_menuredes {
   position: fixed;
@@ -195,24 +199,49 @@ li {
     padding: 10px;
     text-align: center;
     color: white; }
-  
-  @media only screen and (min-width: 760px) {
+  /*responsive head novedades*/
+  @media only screen and (max-width: 666px) {
     .grid-container {
       grid-template-areas: 
       'header header header header header header'  
       'left left left left left left' 
       'middle middle middle middle middle middle'
        'right right right right right right';
-        } 
-    }
+      }   
+}
   
-  @media only screen and (min-width: 1024px) {
+  @media only screen and (min-width: 1920px) {
     .grid-container {
       grid-template-areas: 
       'header header header header header header'  
       'left left middle middle right right'; 
       }
   }
+/*responsive head*/
+  @media only screen and (max-width: 666px) { 
+    .caja_head_img {
+      grid-template-areas: 
+      'header header header header header header'  
+      'left left left left left left' 
+      'middle middle middle middle middle middle'
+       'right right right right right right';
+        }
+       .caja_head_titulo {
+         font-size: 50px;
+         text-align: center;
+         background-color: #f9efe3;
+         padding: 10px;
+         border-top-left-radius: 25px;
+       }
+       .caja_head_subtitulo{
+        font-size: 20px;
+        text-align: center;
+        background-color: #f9efe3;
+        padding: 10px;
+        border-bottom-right-radius: 25px;
+      }
+        
+    }
   /*FIN SECCION HOME*/
   #caja_head_menuredes {
     position: fixed;
@@ -311,6 +340,16 @@ li {
  }
   .contenedor_receta > div {
    padding: 20px;
+ }
+ @media only screen and (max-width: 667px) {
+  .contenedor_receta{
+    grid-template-areas:
+    'menu menu menu'
+     'header header header'
+     'middle middle middle'
+     'right right right'
+     'footer footer footer' ;
+  }
  }
 /*fin recetas*/
 /*buscador*/
