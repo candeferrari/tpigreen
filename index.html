@@ -2,11 +2,11 @@
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css"/>
-<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Inconsolata&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://kit.fontawesome.com/eea52f81ab.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Inconsolata&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, intial-scale=1.0">
 <title> Green Life</title>
@@ -177,19 +177,28 @@
 
 <!-- tutoriales de interes -->
 <section id="Tutorialesdeinteres">
-		<div class="contenedorseccion">
-				<div class="nombreseccion">Tutoriales</div>
+	<div class="contenedorseccion">
+			<div class="nombreseccion">Tutoriales</div>
+	</div>
+<div class="container">
+	<div class="row" style="border: #5c889a; text-align: center;">
+
+		<div class="col-md-12"><h4 class="titulo_h4"> PAULINA COCINA </h4>
 		</div>
-<form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-	<input type="text" placeholder="Search.." name="search2">
-	<button type="submit"><i class="fa fa-search"></i></button>
-</form>
-<div class="flexcenter">
-	<div class="itemcenter"><h4 class="titulo_h4"> PAULINA COCINA </h4></div>
-	<video controls="tutoriales/tutorial_yogurt.mp4" src="tutoriales/tutorial_yogurt.mp4" type="tutorial_yogurt"> </video>
 </div>
-<a href="#" class="previous round">&#8249;</a>
-<a href="#" class="next round">&#8250;</a>
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">
+			<iframe width="300" height="169" src="https://www.youtube.com/embed/G3JfV4BCuwg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<div class="col-md-4">
+			<iframe width="300" height="169" src="https://www.youtube.com/embed/-9KNr7n7hD4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+		</div>
+		<div class="col-md-4">
+				<iframe width="300" height="169" src="https://www.youtube.com/embed/OSpr1PU-OiI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>	
+		</div>
+	</div>
+</div>
 <br>
 <br>
 <div class="circulo-1"></div>
@@ -202,28 +211,32 @@
 <div class="contenedorseccion">
 		<div class="nombreseccion">Contacto</div>
 	</div>
+<div class="container" style="color: #005c81;">
+	<form>
+		<!-- input texto --> <!-- bootstrap-->
+			<div class="row">
+				<div class="col-md-4"><h5>Nombre y Apellido</h5>
+				<input type="text" name="nombre" />
+				</div>
+				<div class="col-md-4"><h5>Email</h5>
+				<input type="email" name="email" placeholder="nombre@ejemplo.com">
+				</div>
+				<div class="col-md-4"><h5>Comentario</h5>
+				<textarea rows="10" cols="70" placeholder="aqui deja tu consulta"></textarea>
+				</div>
+			</div>
+			<!-- botones -->
+			<div class="row">
+					<div class="col-md-4"></div>
+					<div class="col-md-4"></div>
+					<div class="col-md-4">
+						<input type="submit" name="enviar_datos" value="enviar consulta">
+						<input type="reset" name="reset_data" value="borrar">
+					</div>
+			</div>
+	</form>
+</div>
 
-<form>
-	<!-- input texto -->
-<div class="cajaflexbox">
-	<div class="recetas"><h5>Nombre y Apellido</h5>
-	<input type="text" name="nombre" />
-	</div>
-	<div class="recetas"><h5>Email</h5>
-	<input type="email" name="email" placeholder="nombre@ejemplo.com">
-	</div>
-	<div class="recetas"><h5>Comentario</h5>
-	<textarea rows="10" cols="70" placeholder="aqui deja tu consulta"></textarea>
-	</div>
-</div>
-	<!-- botones -->
-<div class="cajaflexbox">
-	<div class="recetas"></div>
-	<div class="recetas"></div>
-	<div class="recetas"><input type="submit" name="enviar_datos" value="enviar consulta"></div>
-	<div class="recetas"><input type="reset" name="reset_data" value="borrar"></div>
-</div>
-<br>
 <div class="circulo-1"></div>
 <div class="circulo-2"></div>
 <div class="circulo-3"></div>
@@ -271,6 +284,14 @@
 <div class="circulo-1"></div>
 <div class="circulo-2"></div>
 <div class="circulo-3"></div>
+
+<div class="container">
+	<div class="row">
+			<div class="col-md-1">col</div>
+			<div class="col-md-1">col</div>
+			<div class="col-md-1">col</div>
+	</div>
+</div>
 </body>
 
 <!-- fin del body -->

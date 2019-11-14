@@ -377,11 +377,11 @@ a:hover {
 
  /*mixin*/
  .circulo-1 {
-   @include divisor ($colorlogo,50px,)
+   @include divisor ($colorlogo,50px)
  }
  .circulo-2 {
-  @include divisor ($colornaranja,100px,)
+  @include divisor ($colornaranja,100px)
 }
 .circulo-3 {
-  @include divisor ($coloramarillo,50px,)
+  @include divisor ($coloramarillo,50px)
 }

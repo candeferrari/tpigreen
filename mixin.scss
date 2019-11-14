@@ -1,0 +1,8 @@
+@mixin divisor ($fondo, $ancho){
+    background-color: $fondo;
+    width: $ancho;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50px;
+
+  }
