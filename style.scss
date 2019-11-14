@@ -1,4 +1,10 @@
+@import "variablecolor","menu", "mixin";
+
 $ancho:1024px;
+$bp: (
+  m:640px,
+  i:1024px
+);
 * {box-sizing: border-box;}
 body {
   margin: 0;
@@ -7,14 +13,14 @@ h2 {
     font-family: Inconsolata;
     font-size: 50px;
     text-align: center;
-    color: green; 
+    color: $colorlogo; 
 }
 
 h3 {
     font-family: Inconsolata;
     font-size: 25px;
     text-align: center;
-    color: teal; 
+    color: $colorlogo; 
 }
 h4 {
   font-family: 'raleway','bold';
@@ -22,19 +28,17 @@ h4 {
   color: #005c46;
   padding: 2%;
 }
-h5 {
-  color: #005c46;
-}
+
 p {
     font-family: 'comfortaa';
     font-size: 20px;
-    color: #666666;
+    color: $colorgris
   }
   
 li {
     font-family: monospace;
     font-size: 20px;
-    color: gray; 
+    color: $colorgris; 
 }
 
 /*head*/
@@ -52,7 +56,7 @@ li {
     left:50%;
     font-size: 150px;
     text-align: center;
-    color: #005c46;
+    color: $colorlogo;
     font-family: 'Comfortaa', bold;
     transform: translate(-50%, -50%);
     grid-template-areas: header;
@@ -63,7 +67,7 @@ li {
   left:50%;
   font-size: 50px;
   text-align: center;
-  color: gray;
+  color: $colorgris;
   font-family: 'Inconsolata';
   transform: translate(-50%, -50%);
   grid-template-areas: middle;
@@ -71,7 +75,7 @@ li {
 #caja_head_menuredes {
   position: fixed;
   top: 10px;
-  background-color: #f48651;
+  background-color: $colornaranja;
   border-radius: 20px;
   margin: 20px;
   padding: 20px;
@@ -80,88 +84,6 @@ li {
   right: 0;
 }
 /*fin head*/  
-
-/* menu */
-.navbar {
-    position: static;
-    background-color: #005c81;
-    font-family: Inconsolata;
-    font-size: 25px;
-    border-radius: 20px; 
-}
-/* Navigation links */
-.navbar a {
-    float: left;
-    font-size: 25px;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: 'Inconsolata'; 
-    border-radius: 50px;
-    font-size: 25px;
-  }
-  
-  /* The subnavigation menu */
-  .subnav {
-    float: left;
-    overflow: hidden;
-    font-family: 'Inconsolata'; 
-    border-radius: 50px;
-    font-size: 25px;
-  }
-  
-  /* Subnav button */
-  .subnav .subnavbtn {
-    font-size: 25px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: #005c81;
-    font-family: 'Inconsolata';
-    margin: 0;
-    border-radius: 50px; 
-  }
-  
-  /* Add a red background color to navigation links on hover */
-  .navbar a:hover, .subnav:hover .subnavbtn {
-    background-color: #f4a100; 
-  }
-  
-  /* Style the subnav content - positioned absolute */
-  .subnav-content {
-    display: none;
-    position: absolute;
-    left: 20%;
-  
-    background-color: #f4a100;
-    width: 100%;
-    z-index: 1; 
-    font-size: 25px;
-    border-radius: 50px;
-    }
-  
-  /* Style the subnav links */
-  .subnav-content a {
-    float: left;
-    color: white;
-    text-decoration: none;
-    font-family: 'Inconsolata';
-    font-size: 25px; }
-  
-  /* Add a grey background color on hover */
-  .subnav-content a:hover {
-    background-color: #005c81;
-    color: white;
-     }
-  
-  /* When you move the mouse over the subnav container, open the subnav content */
-  .subnav:hover .subnav-content {
-    display: block; }
-  
- 
-  
 /*seccion HOME*/
 .header {
     grid-area: header;
@@ -169,7 +91,7 @@ li {
     padding: 30px;
     text-align: center;
     font-size: 35px;
-    color: #005c46; 
+    color: $colorlogo; 
     font-family: 'Comfortaa';
     border-radius: 100px;
 }
@@ -195,7 +117,7 @@ li {
   /* Style the footer */
   .footer {
     grid-area: center;
-    background-color: orange;
+    background-color: $coloramarillo;
     padding: 10px;
     text-align: center;
     color: white; }
@@ -246,7 +168,7 @@ li {
   #caja_head_menuredes {
     position: fixed;
     top: 10px;
-    background-color: #f48651;
+    background-color: $colornaranja;
     border-radius: 20px;
     margin: 20px;
     padding: 20px;
@@ -268,7 +190,7 @@ li {
     font-size: 40px;
     color: #005c81;
     text-align: center;
-    background-color: #f4a100;
+    background-color: $coloramarillo;
     padding: 20px;
     width: 100px;
     border-radius: 50px;
@@ -278,7 +200,7 @@ li {
  /*RECETAS*/
  .titulo_receta_vegetariana{ 
    grid-area: header; 
-   background-color: #005c46;
+   background-color: $colorlogo;
    border-radius: 20px;
    color: white;
    font-family: 'inconsolata';
@@ -309,7 +231,7 @@ li {
   }
  .ingredientes_receta { 
    grid-area: middle;
-   color: #666666;
+   color: $colorgris;
    font-family: 'inconsolata';
    font-size: 30px; 
   }
@@ -410,3 +332,56 @@ a:hover {
   right: 0px;
 }
 /*fin siguiente*/
+
+/*tpi 12 - prueba de sass*/
+.subscripcion_conteiner{
+  background: $colorfondo;
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'menu menu middle middle right right'
+  'footer footer footer footer footer footer';
+  grid-gap: 5px;
+  .titulo_subs_interes{
+    color: $colornaranja;
+    grid-template-areas: menu;
+    text-align: right;
+  }
+  .titulo_subs_plan{
+    color: $colornaranja;
+    grid-template-areas: middle;
+    text-align: right;
+  }
+  .titulo_subs_acepta{
+    color: $colornaranja;
+    grid-template-areas: right;
+    text-align: center;
+  }
+  .boton_subs{
+    color: $colorazul;
+    grid-template-areas: footer;
+    text-align: center;
+    margin: 50px;
+  }
+}
+@media only screen and (max-width: 667px) {
+  .subscripcion_conteiner{
+    grid-template-areas:
+    'menu middle right'
+    'header header header'
+    'middle middle middle'
+    'right right right'
+    'footer footer footer';
+  }
+ }
+
+ /*mixin*/
+ .circulo-1 {
+   @include divisor ($colorlogo,50px,)
+ }
+ .circulo-2 {
+  @include divisor ($colornaranja,100px,)
+}
+.circulo-3 {
+  @include divisor ($coloramarillo,50px,)
+}
