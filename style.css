@@ -49,6 +49,17 @@
     top: 65%;
     left: 25%; }
 
+.caja_head_menuredes {
+  position: fixed;
+  top: 10px;
+  background-color: #ec6200;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  display: block;
+  color: white;
+  right: 0; }
+
 @media (max-width: 668px) {
   .jumbotron {
     height: 300px;
@@ -152,26 +163,17 @@
   font-family: 'inconsolata';
   font-size: 30px; }
 
-.compartir_receta {
-  grid-area: footer;
-  background-color: #f48651;
-  color: #ffffff;
-  font-family: 'inconsolata';
-  font-size: 30px;
-  text-align: center; }
-
 .contenedor_receta {
   display: grid;
   grid-template-areas: 'header header header header header header' 'menu menu middle right right right' 'menu menu middle right right right' 'footer footer footer footer footer footer';
   grid-gap: 5px;
-  background-color: whitesmoke; }
-
-.contenedor_receta > div {
-  padding: 20px; }
+  background-color: whitesmoke;
+  padding: 50px; }
 
 @media only screen and (max-width: 556px) {
   .contenedor_receta {
-    grid-template-areas: 'header header header' 'menu menu menu' 'middle middle middle' 'right right right' 'footer footer footer'; }
+    grid-template-areas: 'header header header' 'menu menu menu' 'middle middle middle' 'right right right' 'footer footer footer';
+    padding: 0px; }
     .contenedor_receta .titulo_receta_vegetariana {
       font-size: 20px; }
     .contenedor_receta .titulo_receta_vegana {
@@ -179,9 +181,9 @@
     .contenedor_receta .titulo_receta_celiaca {
       font-size: 20px; }
     .contenedor_receta .ingredientes_receta {
-      font-size: 18px; }
+      font-size: 15px; }
     .contenedor_receta .preparacion_receta {
-      font-size: 18px; } }
+      font-size: 15px; } }
 
 @media (min-width: 1080px) {
   .contenedor_receta {
@@ -193,8 +195,43 @@
     .contenedor_receta .titulo_receta_celiaca {
       font-size: 30px; }
     .contenedor_receta .ingredientes_receta ul {
-      font-size: 25px; }
+      font-size: 15px; }
     .contenedor_receta .preparacion_receta ol {
-      font-size: 25px; }
+      font-size: 15px; }
     .contenedor_receta .preparacion_receta ul {
-      font-size: 25px; } }
+      font-size: 15px; } }
+
+.col-sm-5 {
+  background-color: #f9efe3;
+  color: #005c46;
+  padding-top: 30px;
+  text-align: center;
+  border-radius: 50px;
+  max-width: 350px;
+  height: 170px; }
+
+.panel-body {
+  color: #005c81;
+  font-size: 20px;
+  border: 2px solid #f9efe3; }
+
+.precio {
+  color: #005c46; }
+
+.btn-lg {
+  background-color: #f4a100;
+  color: white; }
+
+/*footer*/
+.footer {
+  background-image: url(imagenhead/head-01.png);
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  position: relative; }
+
+@media only screen and (max-width: 556px) {
+  .footer {
+    height: 50px;
+    background-size: cover; } }

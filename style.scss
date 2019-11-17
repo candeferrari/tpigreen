@@ -24,6 +24,17 @@
       left: 25%;
     }
 }
+.caja_head_menuredes {
+  position: fixed;
+  top: 10px;
+  background-color: $colornaranja;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  display: block;
+  color: white;
+  right: 0;
+}
 @media (max-width: 668px){
   .jumbotron {
     height: 300px;
@@ -43,7 +54,6 @@
 }
 
 .container h4 {
-
   padding: 30px;
   text-align: center;
   font-size: 35px;
@@ -135,14 +145,6 @@
    font-family: 'inconsolata';
    font-size: 30px; 
   }
- .compartir_receta { 
-   grid-area: footer; 
-   background-color: #f48651;
-   color: #ffffff;
-   font-family: 'inconsolata';
-   font-size: 30px; 
-   text-align: center;
-  }
  
  .contenedor_receta {
    display: grid;
@@ -153,11 +155,11 @@
      'footer footer footer footer footer footer';
    grid-gap: 5px;
    background-color: whitesmoke;
+   padding: 50px;
  }
-  .contenedor_receta > div {
-   padding: 20px;
- }
+
  @media only screen and (max-width: 556px) {
+  
   .contenedor_receta{
     grid-template-areas:
     'header header header'
@@ -165,6 +167,7 @@
     'middle middle middle'
     'right right right'
     'footer footer footer' ;
+    padding: 0px;
     .titulo_receta_vegetariana {
       font-size: 20px;
     }
@@ -175,10 +178,10 @@
       font-size: 20px;
     }
     .ingredientes_receta {
-      font-size: 18px;
+      font-size: 15px;
     }
     .preparacion_receta {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
  }
@@ -199,13 +202,51 @@
       font-size: 30px;
     }
     .ingredientes_receta ul{
-      font-size: 25px;
+      font-size: 15px;
     }
     .preparacion_receta ol{
-      font-size: 25px;
+      font-size: 15px;
     }
     .preparacion_receta ul{
-      font-size: 25px;
+      font-size: 15px;
     }
   }
+ }
+ .col-sm-5{
+   background-color: $colorfondo;
+   color: $colorlogo;
+   padding-top: 30px;
+   text-align: center;
+   border-radius: 50px;
+   max-width: 350px;
+   height: 170px;
+ }
+
+ 
+.panel-body{
+   color:$colorazul;
+   font-size: 20px;
+   border: 2px solid $colorfondo;
+ }
+.precio {
+  color: $colorlogo;
+}
+.btn-lg {
+   background-color: $coloramarillo;
+   color: white;
+ }
+ /*footer*/
+ .footer {
+  background-image: url(imagenhead/head-01.png);
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  position: relative;
+ }
+ @media only screen and (max-width: 556px) {
+   .footer {
+     height: 50px;
+     background-size: cover;
+   }
  }
