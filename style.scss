@@ -1,210 +1,104 @@
 @import "variablecolor","menu", "mixin";
 
-$ancho:1024px;
-$bp: (
-  m:640px,
-  i:1024px
-);
-* {box-sizing: border-box;}
-body {
-  margin: 0;
+.jumbotron {
+  background-image: url(imagenhead/head-01.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  position: relative;
+  text-align: center;
+  .text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $colorlogo;
+    font-size: 100px;
+  }
+  .slogan {
+      position: absolute;
+      font-size: 50px;
+      color: $colorgris;
+      font-family: 'Inconsolata';
+      top: 65%;
+      left: 25%;
+    }
 }
-h2 {
-    font-family: Inconsolata;
-    font-size: 50px;
-    text-align: center;
-    color: $colorlogo; 
+@media (max-width: 668px){
+  .jumbotron {
+    height: 300px;
+    background-size: 800px;
+    position: relative;
+    .text {
+      font-size: 40px;
+      top: 60%;
+      left: 50%;
+    }
+    .slogan {
+      font-size: 20px;
+      top: 70%;
+      left: 15%;
+    }
+  }
 }
 
-h3 {
-    font-family: Inconsolata;
-    font-size: 25px;
-    text-align: center;
-    color: $colorlogo; 
+.container h4 {
+
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: $colorlogo; 
+  font-family: 'Comfortaa';
+  border-radius: 100px;
 }
-h4 {
+.carousel-caption h4 {
   font-family: 'raleway','bold';
   font-size: 30px;
-  color: #005c46;
+  color: $colorlogo;
   padding: 2%;
-}
-
-p {
-    font-family: 'comfortaa';
-    font-size: 20px;
-    color: $colorgris
-  }
-  
-li {
-    font-family: monospace;
-    font-size: 20px;
-    color: $colorgris; 
-}
-
-/*head*/
-.caja_head_img {
-    background: url(imagenhead/head.jpg) no-repeat center; 
-    background-size: cover;
-    height: 500px;
-    position: relative;
-    display: grid;
-    grid-template-areas: 'header header header header header header'  'left left middle middle right right'  'footer footer footer footer footer footer';
-}
-.caja_head_titulo {
-    position: absolute;
-    top: 80%;
-    left:50%;
-    font-size: 150px;
-    text-align: center;
-    color: $colorlogo;
-    font-family: 'Comfortaa', bold;
-    transform: translate(-50%, -50%);
-    grid-template-areas: header;
-}
- .caja_head_subtitulo {
-  position: absolute;
-  top: 100%;
-  left:50%;
-  font-size: 50px;
   text-align: center;
-  color: $colorgris;
-  font-family: 'Inconsolata';
-  transform: translate(-50%, -50%);
-  grid-template-areas: middle;
-}
-#caja_head_menuredes {
-  position: fixed;
-  top: 10px;
-  background-color: $colornaranja;
+  background-color: $colorfondo;
   border-radius: 20px;
-  margin: 20px;
-  padding: 20px;
-  display: block;
-  color: white;
-  right: 0;
 }
-/*fin head*/  
-/*seccion HOME*/
-.header {
-    grid-area: header;
-    background-color: #f9efe3;
-    padding: 30px;
-    text-align: center;
-    font-size: 35px;
-    color: $colorlogo; 
-    font-family: 'Comfortaa';
-    border-radius: 100px;
-}
-.grid-container {
-    display: grid;
-    grid-template-areas: 'header header header header header header'  'left left middle middle right right'  'footer footer footer footer footer footer';
-    grid-template-columns: 100px auto 100px; 
-    grid-gap: 50px;
-}
-  .left {
-    grid-area: left;
-    width: 1/3; 
-}
- .middle {
-    grid-area: middle;
-    width: 2/3; 
-}
-.right {
-    grid-area: right; 
-    width: 3/3; 
-}
-  
-  /* Style the footer */
-  .footer {
-    grid-area: center;
-    background-color: $coloramarillo;
-    padding: 10px;
-    text-align: center;
-    color: white; }
-  /*responsive head novedades*/
-  @media only screen and (max-width: 666px) {
-    .grid-container {
-      grid-template-areas: 
-      'header header header header header header'  
-      'left left left left left left' 
-      'middle middle middle middle middle middle'
-       'right right right right right right';
-      }   
-}
-  
-  @media only screen and (min-width: 1920px) {
-    .grid-container {
-      grid-template-areas: 
-      'header header header header header header'  
-      'left left middle middle right right'; 
-      }
-  }
-/*responsive head*/
-  @media only screen and (max-width: 666px) { 
-    .caja_head_img {
-      grid-template-areas: 
-      'header header header header header header'  
-      'left left left left left left' 
-      'middle middle middle middle middle middle'
-       'right right right right right right';
-        }
-       .caja_head_titulo {
-         font-size: 50px;
-         text-align: center;
-         background-color: #f9efe3;
-         padding: 10px;
-         border-top-left-radius: 25px;
-       }
-       .caja_head_subtitulo{
-        font-size: 20px;
-        text-align: center;
-        background-color: #f9efe3;
-        padding: 10px;
-        border-bottom-right-radius: 25px;
-      }
-        
-    }
-  /*FIN SECCION HOME*/
-  #caja_head_menuredes {
-    position: fixed;
-    top: 10px;
-    background-color: $colornaranja;
-    border-radius: 20px;
-    margin: 20px;
-    padding: 20px;
-    display: block;
-    color: white;
-    right: 0;
-  }
 
+.carousel-caption p {
+  font-family: 'comfortaa';
+  font-size: 20px;
+  color: $colorfondo;
+  background-color: $colorlogo;
+  border-radius: 20px;
+}
+
+.sectionhome {
+  background-color: $colorfondo;
+}
 /* Nombre de secciones */
 .contenedorseccion {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    background-color:white;
-  }
-.nombreseccion {
-    font-family:'comfortaa';
-    font-size: 40px;
-    color: #005c81;
-    text-align: center;
-    background-color: $coloramarillo;
-    padding: 20px;
-    width: 100px;
-    border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  background-color:white;
 }
- /* Fin Nombre de secciones */
+.nombreseccion {
+  font-family:'comfortaa';
+  font-size: 40px;
+  color: #005c81;
+  text-align: center;
+  background-color: $coloramarillo;
+  padding: 20px;
+  width: 100px;
+  border-radius: 50px;
+}
 
- /*RECETAS*/
- .titulo_receta_vegetariana{ 
+/*recetas*/
+.titulo_receta_vegetariana{ 
    grid-area: header; 
    background-color: $colorlogo;
    border-radius: 20px;
    color: white;
    font-family: 'inconsolata';
-   font-size: 50px;
+   font-size: 30px;
    text-align: center;
   }
 .titulo_receta_vegana{ 
@@ -213,7 +107,7 @@ li {
     border-radius: 20px;
     color: white;
     font-family: 'inconsolata';
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
    }
 .titulo_receta_celiaca{ 
@@ -222,7 +116,7 @@ li {
     border-radius: 20px;
     color: white;
     font-family: 'inconsolata';
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
    }
  .img_receta { 
@@ -253,135 +147,65 @@ li {
  .contenedor_receta {
    display: grid;
    grid-template-areas:
-     'menu menu header header header header'
+     'header header header header header header'
      'menu menu middle right right right'
      'menu menu middle right right right'
      'footer footer footer footer footer footer';
    grid-gap: 5px;
-   background-color: #f9efe3;
+   background-color: whitesmoke;
  }
   .contenedor_receta > div {
    padding: 20px;
  }
- @media only screen and (max-width: 667px) {
+ @media only screen and (max-width: 556px) {
   .contenedor_receta{
     grid-template-areas:
-    'menu menu menu'
-     'header header header'
-     'middle middle middle'
-     'right right right'
-     'footer footer footer' ;
-  }
- }
-/*fin recetas*/
-/*buscador*/
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid #f9efe3;
-  float: left;
-  width: 80%;
-  background: #f9efe3;
-}
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #005c46;
-  color: white;
-  font-size: 17px;
-  border: 1px solid #f9efe3;
-  border-left: none;
-  cursor: pointer;
-}
-form.example button:hover {
-  background: #f48651;
-}
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-/*fin buscador*/
-
-/* siguiente */
-a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 16px 16px;
-
-}
-
-a:hover {
-  background-color:#f4a100;
-  color: black;
-}
-
-.previous {
-  background-color: #f1f1f1;
-  color: #005c81;
-}
-
-.next {
-  background-color: #005c46;
-  color: white;
-}
-
-.round {
-  border-radius: 50%;
-  right: 0px;
-}
-/*fin siguiente*/
-
-/*tpi 12 - prueba de sass*/
-.subscripcion_conteiner{
-  background: $colorfondo;
-  display: grid;
-  grid-template-areas:
-  'header header header header header header'
-  'menu menu middle middle right right'
-  'footer footer footer footer footer footer';
-  grid-gap: 5px;
-  .titulo_subs_interes{
-    color: $colornaranja;
-    grid-template-areas: menu;
-    text-align: right;
-  }
-  .titulo_subs_plan{
-    color: $colornaranja;
-    grid-template-areas: middle;
-    text-align: right;
-  }
-  .titulo_subs_acepta{
-    color: $colornaranja;
-    grid-template-areas: right;
-    text-align: center;
-  }
-  .boton_subs{
-    color: $colorazul;
-    grid-template-areas: footer;
-    text-align: center;
-    margin: 50px;
-  }
-}
-@media only screen and (max-width: 667px) {
-  .subscripcion_conteiner{
-    grid-template-areas:
-    'menu middle right'
     'header header header'
+    'menu menu menu'
     'middle middle middle'
     'right right right'
-    'footer footer footer';
+    'footer footer footer' ;
+    .titulo_receta_vegetariana {
+      font-size: 20px;
+    }
+    .titulo_receta_vegana {
+      font-size: 20px;
+    }
+    .titulo_receta_celiaca {
+      font-size: 20px;
+    }
+    .ingredientes_receta {
+      font-size: 18px;
+    }
+    .preparacion_receta {
+      font-size: 18px;
+    }
   }
  }
-
- /*mixin*/
- .circulo-1 {
-   @include divisor ($colorlogo,50px)
+ @media (min-width: 1080px) {
+  .contenedor_receta{
+    grid-template-areas:
+    'header header header header header header'
+     'menu menu middle right right right'
+     'menu menu middle right right right'
+     'footer footer footer footer footer footer' ;
+    .titulo_receta_vegetariana {
+      font-size: 30px;
+    }
+    .titulo_receta_vegana {
+      font-size: 30px;
+    }
+    .titulo_receta_celiaca {
+      font-size: 30px;
+    }
+    .ingredientes_receta ul{
+      font-size: 25px;
+    }
+    .preparacion_receta ol{
+      font-size: 25px;
+    }
+    .preparacion_receta ul{
+      font-size: 25px;
+    }
+  }
  }
- .circulo-2 {
-  @include divisor ($colornaranja,100px)
-}
-.circulo-3 {
-  @include divisor ($coloramarillo,50px)
-}
