@@ -1,0 +1,32 @@
+/* menu */
+.navbar {
+    position: static;
+    background-color: $colorazul;
+    font-family: Inconsolata;
+    font-size: 25px;
+    border-radius: 20px; 
+   
+}
+/* Navigation links */
+.navbar a {
+    float: left;
+    font-size: 25px;
+    color: $coloramarillo;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: 'Inconsolata'; 
+    border-radius: 50px;
+    font-size: 25px;
+    color: white;
+  }
+  /* Add a red background color to navigation links on hover */
+  .navbar a:hover, .subnav:hover .subnavbtn {
+    background-color: $coloramarillo; 
+  }
+  
+  @media (max-width: 668px){
+    .navbar a {
+      font-size: 18px;
+    }
+  }
